@@ -16,7 +16,7 @@ NOTE: Use a HTTP/HTTPS client with ability to call the API using different metho
 * #### Get All Messages:
   Send the main page URL (using GET) to retrieve all messages (default).
 * #### Get Message By Id:
-  Specify the Id of the desired message by appending it to the URL (using GET). For example, if you wanted to get the message at index 1, send https://localhost:44343/Main/1.
+  Specify the Id of the desired message by appending it to the URL (using GET). For example, if you wanted to get the message at index 1, send `https://localhost:44343/Main/1`.
   NOTE: The Id to give in the API URL is the Id of the message object itself, not the 'Id' value associated with the message value.
 * #### Create New Message:
   Send the main page URL (using POST) and specify a new message by sending it and an Id of your choice as JSON in the request body (e.g. `{"Id": 653, "Message": "This is a test message." }`) On success, the API will return a JSON document containing the total word count of all stored messages.
