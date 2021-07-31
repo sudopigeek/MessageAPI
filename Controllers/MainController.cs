@@ -26,7 +26,7 @@ namespace MessageAPI.Controllers
         public Response Post([FromBody] Request request)
         {
             messages.Add(request);
-            return new Response() { count = Count(), success = true };
+            return new Response() { count = Count() };
         }
         public string Put(int id, [FromBody] string value)
         {
@@ -71,6 +71,5 @@ namespace MessageAPI.Controllers
     public class Response
     {
         public int count { get; set; }
-        public bool success { get; set; }
     }
 }
